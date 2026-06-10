@@ -27,7 +27,14 @@ Gantilah `{project_name}` dengan nama proyek Anda.
 Tambahkan FastCrud ke proyek Laravel Anda menggunakan Composer:
 
 ```bash
-composer require satriotol/fastcrud
+composer require tgrwirapmbd/fastcrud
+```
+
+Jika Anda ingin menginstal langsung dari folder repo ini (misalnya saat belum dipublikasikan ke Packagist), tambahkan repository path terlebih dahulu:
+
+```bash
+composer config repositories.fastcrud path /path/ke/folder/fastcrud
+composer require tgrwirapmbd/fastcrud:@dev
 ```
 
 ## 3. Jalankan Perintah Vendor Publish
@@ -41,7 +48,7 @@ php artisan vendor:publish --force
 Ketika Anda menjalankan perintah ini, pilih provider berikut:
 
 ```
-Provider: Satriotol\Fastcrud\FastCrudServiceProvider
+Provider: Tgrwirapmbd\Fastcrud\FastCrudServiceProvider
 ```
 
 Ini akan memastikan bahwa semua file yang diperlukan dari FastCrud dipublikasikan ke proyek Anda.
@@ -62,4 +69,4 @@ Ikuti langkah-langkah berikut:
 Dengan langkah-langkah ini, FastCrud akan terinstal dan siap digunakan dalam proyek Laravel Anda. Selamat mengembangkan aplikasi!
 ## Authors
 
-- [@satriotol](https://github.com/satriotol)
+- [@tgrwirapmbd](https://github.com/tgrwirapmbd)

@@ -13,12 +13,12 @@ class ComposerStaticInitad4f7f7d2e6a4331a24898964649b504
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
-            'Satriotol\\Fastcrud\\' => 19,
+            'Tgrwirapmbd\\Fastcrud\\' => 19,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Satriotol\\Fastcrud\\' => 
+        'Tgrwirapmbd\\Fastcrud\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

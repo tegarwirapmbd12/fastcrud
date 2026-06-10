@@ -1,6 +1,6 @@
 <?php
 
-namespace Satriotol\Fastcrud;
+namespace Tgrwirapmbd\Fastcrud;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -11,7 +11,7 @@ class FastCrudServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
         // Register any package services.
     }
@@ -21,9 +21,11 @@ class FastCrudServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
-        // Bootstrap any package services.
+        $this->loadTranslationsFrom(__DIR__ . '/lang', 'fastcrud');
+        $this->loadViewsFrom(__DIR__ . '/resources/views', 'fastcrud');
+        $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
 
         // Publish configuration file
         if ($this->app->runningInConsole()) {
